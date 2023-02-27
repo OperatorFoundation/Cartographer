@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		DA29E5F929A81D5A007B7985 /* CartographerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29E5F829A81D5A007B7985 /* CartographerApp.swift */; };
-		DA29E5FB29A81D5A007B7985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29E5FA29A81D5A007B7985 /* ContentView.swift */; };
+		DA29E5FB29A81D5A007B7985 /* RepositoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29E5FA29A81D5A007B7985 /* RepositoryView.swift */; };
 		DA29E5FD29A81D5C007B7985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA29E5FC29A81D5C007B7985 /* Assets.xcassets */; };
 		DA29E60029A81D5D007B7985 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA29E5FF29A81D5D007B7985 /* Preview Assets.xcassets */; };
+		DA29E60929A81E6B007B7985 /* OctoKit in Frameworks */ = {isa = PBXBuildFile; productRef = DA29E60829A81E6B007B7985 /* OctoKit */; };
+		DA29E60C29A81FB2007B7985 /* Gardener in Frameworks */ = {isa = PBXBuildFile; productRef = DA29E60B29A81FB2007B7985 /* Gardener */; };
+		DA29E60E29A82334007B7985 /* GithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29E60D29A82334007B7985 /* GithubModel.swift */; };
+		DA29E61529A899E6007B7985 /* Keychain in Frameworks */ = {isa = PBXBuildFile; productRef = DA29E61429A899E6007B7985 /* Keychain */; };
+		DA29E61729AD4E47007B7985 /* Repository+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29E61629AD4E47007B7985 /* Repository+Identifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA29E5F529A81D5A007B7985 /* Cartographer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartographer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA29E5F829A81D5A007B7985 /* CartographerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartographerApp.swift; sourceTree = "<group>"; };
-		DA29E5FA29A81D5A007B7985 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA29E5FA29A81D5A007B7985 /* RepositoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryView.swift; sourceTree = "<group>"; };
 		DA29E5FC29A81D5C007B7985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA29E5FF29A81D5D007B7985 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA29E60129A81D5D007B7985 /* Cartographer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cartographer.entitlements; sourceTree = "<group>"; };
+		DA29E60D29A82334007B7985 /* GithubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubModel.swift; sourceTree = "<group>"; };
+		DA29E61229A89647007B7985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DA29E61629AD4E47007B7985 /* Repository+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Identifiable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA29E60C29A81FB2007B7985 /* Gardener in Frameworks */,
+				DA29E61529A899E6007B7985 /* Keychain in Frameworks */,
+				DA29E60929A81E6B007B7985 /* OctoKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +63,11 @@
 		DA29E5F729A81D5A007B7985 /* Cartographer */ = {
 			isa = PBXGroup;
 			children = (
+				DA29E61229A89647007B7985 /* Info.plist */,
+				DA29E60D29A82334007B7985 /* GithubModel.swift */,
 				DA29E5F829A81D5A007B7985 /* CartographerApp.swift */,
-				DA29E5FA29A81D5A007B7985 /* ContentView.swift */,
+				DA29E5FA29A81D5A007B7985 /* RepositoryView.swift */,
+				DA29E61629AD4E47007B7985 /* Repository+Identifiable.swift */,
 				DA29E5FC29A81D5C007B7985 /* Assets.xcassets */,
 				DA29E60129A81D5D007B7985 /* Cartographer.entitlements */,
 				DA29E5FE29A81D5D007B7985 /* Preview Content */,
@@ -85,6 +99,11 @@
 			dependencies = (
 			);
 			name = Cartographer;
+			packageProductDependencies = (
+				DA29E60829A81E6B007B7985 /* OctoKit */,
+				DA29E60B29A81FB2007B7985 /* Gardener */,
+				DA29E61429A899E6007B7985 /* Keychain */,
+			);
 			productName = Cartographer;
 			productReference = DA29E5F529A81D5A007B7985 /* Cartographer.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +132,11 @@
 				Base,
 			);
 			mainGroup = DA29E5EC29A81D5A007B7985;
+			packageReferences = (
+				DA29E60729A81E6B007B7985 /* XCRemoteSwiftPackageReference "octokit.swift" */,
+				DA29E60A29A81FB2007B7985 /* XCRemoteSwiftPackageReference "Gardener" */,
+				DA29E61329A899E6007B7985 /* XCRemoteSwiftPackageReference "Keychain" */,
+			);
 			productRefGroup = DA29E5F629A81D5A007B7985 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA29E5FB29A81D5A007B7985 /* ContentView.swift in Sources */,
+				DA29E5FB29A81D5A007B7985 /* RepositoryView.swift in Sources */,
+				DA29E60E29A82334007B7985 /* GithubModel.swift in Sources */,
 				DA29E5F929A81D5A007B7985 /* CartographerApp.swift in Sources */,
+				DA29E61729AD4E47007B7985 /* Repository+Identifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +300,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cartographer/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +328,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cartographer/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +364,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA29E60729A81E6B007B7985 /* XCRemoteSwiftPackageReference "octokit.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nerdishbynature/octokit.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+		DA29E60A29A81FB2007B7985 /* XCRemoteSwiftPackageReference "Gardener" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OperatorFoundation/Gardener";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		DA29E61329A899E6007B7985 /* XCRemoteSwiftPackageReference "Keychain" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OperatorFoundation/Keychain";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA29E60829A81E6B007B7985 /* OctoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA29E60729A81E6B007B7985 /* XCRemoteSwiftPackageReference "octokit.swift" */;
+			productName = OctoKit;
+		};
+		DA29E60B29A81FB2007B7985 /* Gardener */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA29E60A29A81FB2007B7985 /* XCRemoteSwiftPackageReference "Gardener" */;
+			productName = Gardener;
+		};
+		DA29E61429A899E6007B7985 /* Keychain */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA29E61329A899E6007B7985 /* XCRemoteSwiftPackageReference "Keychain" */;
+			productName = Keychain;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA29E5ED29A81D5A007B7985 /* Project object */;
 }
