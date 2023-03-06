@@ -33,7 +33,17 @@ struct RepositoryView
 
                 List($github.repositories)
                 {
-                    Text($0.wrappedValue.name ?? "<Empty>")
+                    repository in
+
+                    Button
+                    {
+                        print("clicked")
+                    }
+                    label:
+                    {
+                        Text("-")
+                        Text(repository.wrappedValue.name ?? "<Empty>")
+                    }
                 }
             }
             else
